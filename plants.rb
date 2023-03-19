@@ -13,10 +13,15 @@
 
 plant_thriving = false
 gets_sunshine = true
-ounces_of_water = 10
+ounces_of_water = 0
 
 if ounces_of_water >= 10 && gets_sunshine == true
     plant_thriving = true
+    p "The plant is thriving"
+elsif ounces_of_water >=10
+    p "The plant needs sunshine"
+elsif gets_sunshine == true
+    p "The plant needs water"
+else
+    p "The plant needs sunshine and water"
 end
-
-p plant_thriving
